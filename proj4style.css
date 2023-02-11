@@ -1,0 +1,168 @@
+/* defining the styles for media query demo page. */
+
+/* styling the body */
+
+body{
+    height: 100vh;
+    background-color: aquamarine;
+
+}
+
+/* giving some prperties to the h1 tag */
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+/* screen sizes */
+
+.Laptop_large, .Laptop, .Tablet, .Mobile_Phones
+{
+    font-size: 40px;
+    text-align: center;
+    display: none;
+
+} 
+
+/* now using max-width property of media queries */
+
+ @media screen and (max-width: 1440px)  
+{
+    body{
+        background-color: brown;
+    };
+    .Laptop_large{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 1024px)  
+{
+    body{
+        background-color: chartreuse;
+    };
+    .Laptop_large{
+        display: none;
+    }
+    .Laptop{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 768px)  
+{
+    body{
+        background-color: darkorange;
+    };
+    .Laptop_large{
+        display: none;
+    }
+
+    .Laptop{
+        display: none;
+    }
+
+    .Tablet{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 425px)  
+{
+    body{
+        background-color: darkolivegreen;
+    };
+    .Laptop_large{
+        display: none;
+    }
+
+    .Laptop{
+        display: none;
+    }
+
+    .Tablet{
+        display: none;
+    }
+
+    .Mobile_Phones{
+        display: block;
+    }
+    
+}
+
+/* with min-width media query */
+
+ @media screen and (min-width:0px) {
+    body{
+        background-color: crimson;
+    }
+
+    .Mobile_Phones{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width:425px) {
+    body{
+        background-color: aqua;
+    }
+
+    .Mobile_Phones{
+        display: none;
+    }
+
+    .Tablet{
+        display: block;
+    }
+    
+}
+
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: darkgoldenrod;
+    }
+
+    .Mobile_Phones{
+        display: none;
+    }
+
+    .Tablet{
+        display: none;
+    }
+
+    .Laptop{
+        display: block;
+    }
+    
+}
+
+
+@media screen and (min-width:1024px) {
+    body{
+        background-color: forestgreen;
+    }
+
+    .Mobile_Phones{
+        display: none;
+    }
+
+    .Tablet{
+        display: none;
+    }
+
+    .Laptop{
+        display: none;
+    }
+
+    .Laptop_large{
+        display: block;
+    }
+    
+} 
+
